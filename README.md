@@ -1,1 +1,1 @@
-# SM4J
+SM4J : Smart Manufacturing for JAVA
