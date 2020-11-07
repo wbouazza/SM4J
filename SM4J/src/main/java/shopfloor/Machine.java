@@ -2,7 +2,12 @@ package shopfloor;
 
 import java.util.LinkedList;
 
+import process.MachineProcess;
 import shopfloor.data_stat.MachineStats;
+
+//enum presetMachine {
+//	test1, test2
+//}
 
 public class Machine {
 
@@ -13,10 +18,10 @@ public class Machine {
 	String description;
 	MachineStats Stats;
 	Object waitingQ;
-	
+
 	// working configuration
-//	public int[][] Rmat;
-	public Process process;
+	// public int[][] Rmat;
+	public MachineProcess process;
 
 	// dynamic information
 	String state;
@@ -27,9 +32,10 @@ public class Machine {
 		}
 	}
 
-	public Machine(int _id, String _name) {
+	public Machine(int _id, String _name, int _nbFam, int _processing, int _setup) {
 		this.id = _id;
 		this.name = _name;
+		this.process = new MachineProcess(_nbFam, _processing, _setup);
 	}
 	// working logs (statistics)
 

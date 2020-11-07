@@ -1,8 +1,8 @@
-package presets;
+package process;
 
 import java.util.LinkedList;
 
-public class Process {
+public class MachineProcess {
 
 	int nbFam;
 	LinkedList<Integer> processings;
@@ -13,7 +13,7 @@ public class Process {
 	 * @param _processing homgenous processing time 
 	 * @param _setup  homgenous setup time
 	 */
-	Process(int _nbFam, int _processing, int _setup) {
+	public MachineProcess(int _nbFam, int _processing, int _setup) {
 		this.processings = new LinkedList<Integer>();
 		this.setups= new LinkedList<Integer>();
 		this.nbFam=_nbFam;
