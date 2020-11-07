@@ -1,5 +1,9 @@
 package shopfloor;
 
+import java.util.LinkedList;
+
+import shopfloor.data_stat.MachineStats;
+
 public class Machine {
 
 	// static information
@@ -7,9 +11,12 @@ public class Machine {
 	int cell_ID;
 	String name;
 	String description;
-
+	MachineStats Stats;
+	Object waitingQ;
+	
 	// working configuration
-	public int[][] Rmat;
+//	public int[][] Rmat;
+	public Process process;
 
 	// dynamic information
 	String state;
@@ -22,7 +29,7 @@ public class Machine {
 
 	public Machine(int _id, String _name) {
 		this.id = _id;
-		this.name=_name;
+		this.name = _name;
 	}
 	// working logs (statistics)
 
