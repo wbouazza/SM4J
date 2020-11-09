@@ -1,10 +1,8 @@
 package shopfloor;
 
-import java.util.LinkedList;
-
+import java.util.ArrayList;
 import process.ManRange;
 import shopfloor.data_stat.FactoryStats;
-import shopfloor.data_stat.MachineStats;
 
 public class Factory {
 
@@ -17,8 +15,8 @@ public class Factory {
 	FactoryStats Stats;
 	// working configuration
 	// dynamic information
-	public LinkedList<Cell> cells;
-	public LinkedList<ManRange> manRanges;
+	public ArrayList<Cell> cells;
+	public ArrayList<ManRange> manRanges;
 	public Stock rawStock;
 	public Stock finalStock;
 
@@ -28,7 +26,7 @@ public class Factory {
 	public Factory(int _id, String _name) {
 		this.name = _name;
 		this.id = _id;
-		this.cells = new LinkedList<Cell>();
+		this.cells = new ArrayList<Cell>();
 	}
 
 	// function to initiate after cell's adding complete

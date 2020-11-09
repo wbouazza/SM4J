@@ -1,9 +1,7 @@
 package shopfloor;
 
-import java.util.LinkedList;
-
+import java.util.ArrayList;
 import shopfloor.data_stat.CellStats;
-import shopfloor.data_stat.MachineStats;
 
 public class Cell {
 
@@ -21,7 +19,7 @@ public class Cell {
 
 	// working logs (statistics)
 
-	public LinkedList<Machine> machines;
+	public ArrayList<Machine> machines;
 
 	/**
 	 * @param _id cell id
@@ -30,12 +28,12 @@ public class Cell {
 	public Cell(int _id, String _name) {
 		this.id=_id;
 		this.name=_name;
-		this.machines = new LinkedList<Machine>();
+		this.machines = new ArrayList<Machine>();
 		
 	}
 
 	public Cell() {
-		this.machines = new LinkedList<Machine>();
+		this.machines = new ArrayList<Machine>();
 	}
 
 	/**

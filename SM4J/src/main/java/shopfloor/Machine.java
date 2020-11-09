@@ -1,7 +1,5 @@
 package shopfloor;
 
-import java.util.LinkedList;
-
 import process.MachineProcess;
 import shopfloor.data_stat.MachineStats;
 
